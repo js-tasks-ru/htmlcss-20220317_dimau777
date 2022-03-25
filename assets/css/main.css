@@ -18,6 +18,13 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --primary-button-color: #4263EB;
+    --primary-button-hover-color: #2342C0;
+    --secondary-button-color: #7048E8;
+    --secondary-button-hover-color: #5028C6;
+    --alternate-button-color: var(--white);
+    --alternate-button-hover-color: var(--white);
 }
 
 * {
