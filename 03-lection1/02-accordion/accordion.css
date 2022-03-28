@@ -3,8 +3,9 @@
 
 }
 
-.accordion-item {
+.accordion__item {
     box-sizing: border-box;
+    margin-bottom: 8px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 24px 32px 32px 32px;
@@ -17,22 +18,18 @@
 }
 
 /* Change the arrow direction when user open the accordion item */
-.accordion-item[open] {
+.accordion__item[open] {
     background: var(--white) url("arrow-up.png") no-repeat;
     background-position: top right;
     background-origin: content-box;
     background-size: 16px 8px;
 }
 
-.accordion__item {
-    margin-bottom: 8px;
-}
-
 .accordion__item:last-child {
     margin-bottom: 0px;
 }
 
-.accordion-item__title {
+.accordion__title {
     display: block;
     font-family: var(--second-font-family);
     font-style: normal;
@@ -43,12 +40,11 @@
     outline:none; /* remove outline when the element in focus in Safari browser */
 }
 
-.accordion-item__title::-webkit-details-marker {
+.accordion__title::-webkit-details-marker {
     display: none;
 }
 
-
-.accordion-item__content {
+.accordion__content {
     margin: 16px 0px 0px 0px;
     padding: 0px 16px 0px 0px;
     font-family: var(--second-font-family);
