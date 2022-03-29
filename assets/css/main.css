@@ -34,6 +34,7 @@
     --alternate-button-hover-color: var(--white);
 
     --main-font-family: 'Roboto', sans-serif;
+    --second-font-family: 'Inter', sans-serif;
 }
 
 html, body {
