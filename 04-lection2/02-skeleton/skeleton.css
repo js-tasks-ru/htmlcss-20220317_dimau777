@@ -21,6 +21,7 @@
     width: 64px;
     height: 64px;
     border-radius: 100%;
+    margin-right: 16px;
 }
 
 .skeleton__string {
@@ -31,12 +32,10 @@
 
 .skeleton__string_small {
     width: 33%;
-    margin-left: 16px;
 }
 
 .skeleton__string_medium {
     width: 50%;
-    margin-left: 16px;
 }
 
 .skeleton__string_big {
