@@ -34,6 +34,11 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--primary-button-color);
+    text-decoration: none;
+}
+
+.histogram__full-view-link {
+    text-decoration: none;
 }
 
 .histogram__main-number {
@@ -48,20 +53,20 @@
     color: var(--black);
 }
 
-.histogram__visual-block {
+.histogram__chart {
     height: 50px;
     margin-top: 39px;
     display: flex;
     align-items: flex-end;
 }
 
-.histogram__item {
+.histogram__chart-item {
     margin-left: 1px;
     background-color: var(--primary-button-color);
     width: calc(100% / 20);
 }
 
-.histogram__item:first-child {
+.histogram__chart-item:first-child {
     margin-left: 0px;
 }
 
