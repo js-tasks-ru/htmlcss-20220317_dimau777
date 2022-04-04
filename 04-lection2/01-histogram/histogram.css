@@ -63,7 +63,8 @@
 .histogram__chart-item {
     margin-left: 1px;
     background-color: var(--primary-button-color);
-    width: calc(100% / 20);
+    flex-basis: 9px;
+    flex-grow: 1;
 }
 
 .histogram__chart-item:first-child {
