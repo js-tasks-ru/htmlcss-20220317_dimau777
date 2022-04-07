@@ -1,3 +1,41 @@
 .page {
    height: 100%;
 }
+
+/* Модификатор для контейнера всей HTML страницы, который используется для внутренних страниц сайта */
+.page_inner {
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+}
+
+/* Шапка страницы */
+.page__header {
+   background-color: var(--white);
+   height: 82px;
+}
+
+/* Основной блок с контентом страницы */
+.page__main {
+   background-color: var(--grey-5);
+   padding: 36px 0 36px 0;
+}
+
+.page__main-wrapper {
+   height: 100%;
+   display: grid;
+   grid-template-columns: auto 1fr;
+   column-gap: 56px;
+}
+
+.page__menu {
+   width: 229px;
+}
+
+.page__preview-area {
+
+}
+
+/* Футер страницы */
+.page__footer {
+
+}
