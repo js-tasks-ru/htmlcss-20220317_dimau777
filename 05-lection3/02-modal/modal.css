@@ -1,31 +1,27 @@
 .modal {
     display: none;
-}
-
-.modal__blur {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.5;
-    background: var(--grey-6);
+    background-color: var(--grey-6-with-opacity);
 }
 
 .modal__window {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     background: var(--white);
     border-radius: 8px;
-    padding: 15px 15px 30px 40px;
+    padding: 30px 40px;
     text-align: right;
 }
 
 .modal__title {
-    margin: 5px 25px 0 0;
+    margin: 0;
     font-family: var(--second-font-family);
     font-style: normal;
     font-weight: 600;
@@ -36,7 +32,7 @@
 }
 
 .modal__content {
-    margin: 14px 25px 0 0;
+    margin: 14px 0 0 0;
     font-family: var(--second-font-family);
     font-style: normal;
     font-weight: 400;
@@ -48,6 +44,9 @@
 
 .modal__close {
     display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
     width: 16px;
     height: 16px;
