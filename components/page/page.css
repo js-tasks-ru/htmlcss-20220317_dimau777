@@ -1,3 +1,9 @@
 .page {
    height: 100%;
 }
+
+/* Модификатор для контейнера всей HTML страницы, который используется для внутренних страниц сайта */
+.page_inner {
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+}
