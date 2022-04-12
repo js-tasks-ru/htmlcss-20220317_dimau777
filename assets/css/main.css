@@ -29,6 +29,8 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5: #F9FAFC;
+    --grey-6: #C4C4C4;
+    --grey-6-with-opacity: rgba(196, 196, 196, 0.5);
 
     --error: var(--red);
     --success: var(--blue);
