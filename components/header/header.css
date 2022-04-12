@@ -1,16 +1,43 @@
 .header {
     background-color: var(--white);
-    min-height: 82px;
+    padding: 16px 0;
+}
+
+.header__logo {
+    text-align: center;
 }
 
 .header__title {
     margin: 0px;
-    padding-top: 96px;
-    padding-bottom: 77px;
+    padding-top: 48px;
+    padding-bottom: 69px;
     font-family: var(--second-font-family);
     font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
-    color: var(--black);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+}
+
+.header_inner {
+    background: var(--grey-5);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 24px 0;
+    }
+
+    .header__logo {
+        text-align: left;
+    }
+
+    .header__title {
+        padding-top: 40px;
+        padding-bottom: 53px;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 64px;
+        color: var(--black);
+    }
 }

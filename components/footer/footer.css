@@ -1,4 +1,5 @@
 .footer {
+    display: none;
     text-align: center;
     padding: 71px 10px 136px 10px;
     background-color: var(--white);
@@ -22,4 +23,10 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        display: block;
+    }
 }
