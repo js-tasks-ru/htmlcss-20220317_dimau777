@@ -1,0 +1,78 @@
+.checkbox {
+    display: inline-flex; /* Чтобы компонент остался строчным снаружи */
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox__input {
+    position: absolute;
+    outline: none;
+    /* Делаем невидимым исходный checkbox таким образом, так как
+    display: none не позволяет табом переместиться на этот элемент  */
+    clip: rect(0, 0, 0, 0);
+}
+
+.checkbox__custom-element {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkbox__control {
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    background-color: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    /* Расположим галочку (checkbox__icon) внутри чекбокса по центру чекбокса */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox__icon {
+    display: none;
+}
+
+.checkbox__text {
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+/* Состояние checked для чекбокса */
+.checkbox__input:checked ~ .checkbox__custom-element .checkbox__control {
+    background-color: var(--primary-button-color);
+    border-color: var(--primary-button-color);
+}
+
+.checkbox__input:checked ~ .checkbox__custom-element .checkbox__icon {
+    display: block;
+}
+
+/* Состояние focused для чекбокса */
+.checkbox__input:focus ~ .checkbox__custom-element .checkbox__text {
+    text-decoration: underline;
+}
+
+/* Состояние disabled для чекбокса */
+.checkbox__input:disabled ~ .checkbox__custom-element {
+    cursor: not-allowed;
+}
+
+.checkbox__input:disabled ~ .checkbox__custom-element .checkbox__control {
+    background-color: var(--grey-2);
+    border: 1px solid var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .checkbox__custom-element .checkbox__icon {
+    display: none;
+}
+
+.checkbox__input:disabled ~ .checkbox__custom-element .checkbox__text {
+    color: var(--grey-2);
+}
