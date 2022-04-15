@@ -1,0 +1,40 @@
+.tabs {
+
+}
+
+.tabs__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__scroller {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+}
+
+.tabs__tab {
+    padding-bottom: 8px;
+    border-bottom: 5px solid var(--white);
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    white-space: nowrap;
+}
+
+/* Active tab styles */
+.tabs__input:checked + .tabs__tab {
+    border-bottom: 5px solid var(--black);
+    color: var(--black);
+}
+
+/* Styles for desktop devices */
+@media screen and (min-width: 768px) {
+    .tabs__scroller {
+        gap: 40px;
+    }
+
+}
