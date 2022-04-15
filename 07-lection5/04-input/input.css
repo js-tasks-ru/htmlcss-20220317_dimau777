@@ -1,0 +1,81 @@
+.text-input {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.text-input__label {
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}
+
+.text-input__control {
+    width: 350px;
+    height: 56px;
+    padding: 15px 24px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-4);
+}
+
+.text-input__control::placeholder {
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-2);
+}
+
+.text-input__success-icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.text-input__error-icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+/* Стили для успешного ввода */
+.text-input_success .text-input__success-icon{
+    display: block;
+}
+
+/* Стили для ошибочного ввода */
+.text-input_invalid .text-input__error-icon {
+    display: block;
+}
+
+.text-input_invalid .text-input__control {
+    border: 1px solid var(--error);
+}
+
+/* Стили для поля ввода в фокусе */
+.text-input__control:focus {
+    border: 1px solid var(--blue);
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+}
