@@ -7,5 +7,38 @@
     </head>
     <body>
 
+    <div style="display: flex; gap: 16px; flex-direction: column; padding: 30px;">
+
+        <label class="radio">
+            <input type="radio" class="radio__input" name="name" value="value1">
+            <div class="radio__custom-element">
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__text">Default</div>
+            </div>
+        </label>
+
+        <label class="radio">
+            <input type="radio" class="radio__input" checked name="name" value="value2">
+            <div class="radio__custom-element">
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__text">Checked</div>
+            </div>
+        </label>
+
+        <label class="radio">
+            <input type="radio" class="radio__input" disabled name="name" value="value3">
+            <div class="radio__custom-element">
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__text">Disabled</div>
+            </div>
+        </label>
+
+    </div>
     </body>
 </html>

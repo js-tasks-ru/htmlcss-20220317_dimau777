@@ -1,0 +1,82 @@
+.radio {
+    display: inline-flex; /* Чтобы компонент остался строчным снаружи */
+    cursor: pointer;
+    position: relative;
+}
+
+.radio__input {
+    position: absolute;
+    outline: none;
+    /* Делаем невидимым исходный radio таким образом, так как
+    display: none не позволяет табом переместиться на этот элемент  */
+    clip: rect(0, 0, 0, 0);
+}
+
+.radio__custom-element {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.radio__control {
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    background-color: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 14px;
+    /* Расположим галочку (radio__icon) внутри чекбокса по центру чекбокса */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio__icon {
+    display: none;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary-button-color);
+    border-radius: 14px;
+}
+
+.radio__text {
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+/* Состояние checked для radio баттона */
+.radio__input:checked ~ .radio__custom-element .radio__control {
+    border-color: var(--primary-button-color);
+}
+
+.radio__input:checked ~ .radio__custom-element .radio__icon {
+    display: block;
+}
+
+/* Состояние focused для чекбокса */
+.radio__input:focus ~ .radio__custom-element .radio__text {
+    text-decoration: underline;
+}
+
+/* Состояние disabled для чекбокса */
+.radio__input:disabled ~ .radio__custom-element {
+    cursor: not-allowed;
+}
+
+.radio__input:disabled ~ .radio__custom-element .radio__control {
+    background-color: var(--grey-2);
+    border: 1px solid var(--grey-2);
+}
+
+.radio__input:disabled ~ .radio__custom-element .radio__icon {
+    display: none;
+}
+
+.radio__input:disabled ~ .radio__custom-element .radio__text {
+    color: var(--grey-2);
+}
