@@ -1,0 +1,86 @@
+.toggler {
+    display: inline-flex; /* Чтобы компонент остался строчным снаружи */
+    cursor: pointer;
+    position: relative;
+}
+
+.toggler__input {
+    position: absolute;
+    outline: none;
+    /* Делаем невидимым исходный toggler таким образом, так как
+    display: none не позволяет табом переместиться на этот элемент  */
+    clip: rect(0, 0, 0, 0);
+}
+
+.toggler__custom-element {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.toggler__control {
+    box-sizing: border-box;
+    width: 52px;
+    height: 28px;
+    background-color: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    /* Расположим галочку (toggler__icon) внутри чекбокса по центру чекбокса */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.toggler__icon {
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    background: var(--grey-2);
+    margin: 1px;
+    border-radius: 16px;
+}
+
+.toggler__text {
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+/* Состояние checked для переключателя */
+.toggler__input:checked ~ .toggler__custom-element .toggler__control {
+    background-color: var(--primary-button-color);
+    border-color: var(--primary-button-color);
+    justify-content: right;
+}
+
+.toggler__input:checked ~ .toggler__custom-element .toggler__icon {
+    background-color: var(--white);
+}
+
+/* Состояние focused для переключателя */
+.toggler__input:focus ~ .toggler__custom-element .toggler__text {
+    text-decoration: underline;
+}
+
+/* Состояние disabled для переключателя */
+.toggler__input:disabled ~ .toggler__custom-element {
+    cursor: not-allowed;
+}
+
+.toggler__input:disabled ~ .toggler__custom-element .toggler__control {
+    background-color: var(--grey-2);
+    border: 1px solid var(--grey-2);
+}
+
+.toggler__input:disabled ~ .toggler__custom-element .toggler__icon {
+    background: var(--grey-3);
+    opacity: 0.25;
+    border-radius: 16px;
+}
+
+.toggler__input:disabled ~ .toggler__custom-element .toggler__text {
+    color: var(--grey-2);
+}
