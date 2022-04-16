@@ -8,5 +8,31 @@
     </head>
     <body>
 
+    <div style="background-color: #F9FAFC; padding: 16px 12px; display: flex; gap: 12px; align-items: center;">
+        <button class="burger-menu__open" id="burger-menu-open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-grow: 1;">
+            <rect y="1" width="30" height="30" fill="#212429"/>
+            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+        </svg>
+    </div>
+
+
+    <div class="burger-menu" id="burger-menu">
+        <button class="burger-menu__close" id="burger-menu-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="burger-menu__window"></div>
+    </div>
+
     </body>
 </html>
