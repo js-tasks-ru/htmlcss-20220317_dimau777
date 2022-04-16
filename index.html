@@ -1,89 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Main page</title>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <div class="page">
-        <header class="header">
-            <div class="container">
-                <h1 class="header__title">Reusable component library</h1>
+<div class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="1" width="30" height="30" fill="#212429"/>
+                    <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                    <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </svg>
             </div>
-        </header>
-        <main class="preview">
-            <div class="container preview__cards-list">
-                <div class="card">
-                    <div class="card__preview-area"></div>
+            <h1 class="header__title">Reusable component library</h1>
+        </div>
+    </header>
+    <main class="preview">
+        <div class="container preview__cards-list">
+            <div class="card">
+                <div class="card__preview-area"></div>
+                <div class="card__meta-info">
                     <h3 class="card__title">Tooltip</h3>
+                    <div class="card__component-type">Container</div>
                 </div>
-                <div class="card">
-                    <div class="card__preview-area"></div>
+            </div>
+            <div class="card">
+                <div class="card__preview-area"></div>
+                <div class="card__meta-info">
                     <h3 class="card__title">Custom form elements</h3>
+                    <div class="card__component-type">Element</div>
                 </div>
-                <div class="card">
-                    <div class="card__preview-area"></div>
+            </div>
+            <div class="card">
+                <div class="card__preview-area"></div>
+                <div class="card__meta-info">
                     <h3 class="card__title">Calendar</h3>
+                    <div class="card__component-type">Container</div>
                 </div>
-                <div class="card">
-                    <div class="card__preview-area"></div>
+            </div>
+            <div class="card">
+                <div class="card__preview-area"></div>
+                <div class="card__meta-info">
                     <h3 class="card__title">Modal dialog</h3>
+                    <div class="card__component-type">Container</div>
                 </div>
-                <div class="card">
-                    <div class="card__preview-area">
-                        <div class="histogram">
-                            <div class="histogram__meta">
-                                <div class="histogram__title">
-                                    Total orders
-                                </div>
-                                <p class="histogram__full-view">
-                                    <a href="" class="histogram__full-view-link">View all</a>
-                                </p>
-                                <p class="histogram__main-number">
-                                    50254
-                                </p>
+            </div>
+            <div class="card">
+                <div class="card__preview-area">
+                    <div class="histogram">
+                        <div class="histogram__meta">
+                            <div class="histogram__title">
+                                Total orders
                             </div>
-                            <div class="histogram__chart">
-                                <div class="histogram__chart-item" style="height: 100%;"></div>
-                                <div class="histogram__chart-item" style="height: 100%;"></div>
-                                <div class="histogram__chart-item" style="height: 80%;"></div>
-                                <div class="histogram__chart-item" style="height: 90%;"></div>
-                                <div class="histogram__chart-item" style="height: 95%;"></div>
-                                <div class="histogram__chart-item" style="height: 67%;"></div>
-                                <div class="histogram__chart-item" style="height: 11%;"></div>
-                                <div class="histogram__chart-item" style="height: 12%;"></div>
-                                <div class="histogram__chart-item" style="height: 12%;"></div>
-                                <div class="histogram__chart-item" style="height: 24%;"></div>
-                                <div class="histogram__chart-item" style="height: 35%;"></div>
-                                <div class="histogram__chart-item" style="height: 80%;"></div>
-                                <div class="histogram__chart-item" style="height: 90%;"></div>
-                                <div class="histogram__chart-item" style="height: 95%;"></div>
-                                <div class="histogram__chart-item" style="height: 67%;"></div>
-                                <div class="histogram__chart-item" style="height: 11%;"></div>
-                                <div class="histogram__chart-item" style="height: 12%;"></div>
-                                <div class="histogram__chart-item" style="height: 12%;"></div>
-                                <div class="histogram__chart-item" style="height: 24%;"></div>
-                                <div class="histogram__chart-item" style="height: 35%;"></div>
-                            </div>
+                            <p class="histogram__full-view">
+                                <a href="" class="histogram__full-view-link">View all</a>
+                            </p>
+                            <p class="histogram__main-number">
+                                50254
+                            </p>
+                        </div>
+                        <div class="histogram__chart">
+                            <div class="histogram__chart-item" style="height: 100%;"></div>
+                            <div class="histogram__chart-item" style="height: 100%;"></div>
+                            <div class="histogram__chart-item" style="height: 80%;"></div>
+                            <div class="histogram__chart-item" style="height: 90%;"></div>
+                            <div class="histogram__chart-item" style="height: 95%;"></div>
+                            <div class="histogram__chart-item" style="height: 67%;"></div>
+                            <div class="histogram__chart-item" style="height: 11%;"></div>
+                            <div class="histogram__chart-item" style="height: 12%;"></div>
+                            <div class="histogram__chart-item" style="height: 12%;"></div>
+                            <div class="histogram__chart-item" style="height: 24%;"></div>
+                            <div class="histogram__chart-item" style="height: 35%;"></div>
+                            <div class="histogram__chart-item" style="height: 80%;"></div>
+                            <div class="histogram__chart-item" style="height: 90%;"></div>
+                            <div class="histogram__chart-item" style="height: 95%;"></div>
+                            <div class="histogram__chart-item" style="height: 67%;"></div>
+                            <div class="histogram__chart-item" style="height: 11%;"></div>
+                            <div class="histogram__chart-item" style="height: 12%;"></div>
+                            <div class="histogram__chart-item" style="height: 12%;"></div>
+                            <div class="histogram__chart-item" style="height: 24%;"></div>
+                            <div class="histogram__chart-item" style="height: 35%;"></div>
                         </div>
                     </div>
+                </div>
+                <div class="card__meta-info">
                     <h3 class="card__title">Histogram</h3>
+                    <div class="card__component-type">Element</div>
                 </div>
-                <div class="card">
-                    <div class="card__preview-area"></div>
+            </div>
+            <div class="card">
+                <div class="card__preview-area"></div>
+                <div class="card__meta-info">
                     <h3 class="card__title">Avatar</h3>
+                    <div class="card__component-type">Element</div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <header class="footer__title">About</header>
-                <p class="footer__description">This project is a collection of professionally designed, pre-built,
-                    fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview
-                    components, or browsing the PNG previews in the categories you're most curious about.</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <header class="footer__title">About</header>
+            <p class="footer__description">This project is a collection of professionally designed, pre-built,
+                fully responsive HTML snippets you can drop into your projects. Get started by checking out our free
+                preview
+                components, or browsing the PNG previews in the categories you're most curious about.</p>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
 

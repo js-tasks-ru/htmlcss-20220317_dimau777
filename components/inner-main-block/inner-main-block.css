@@ -1,11 +1,22 @@
 .inner-main-block {
-    background-color: var(--grey-5);
-    padding: 36px 0 36px 0;
+    padding: 0 0 36px 0;
+    background-color: var(--white);
 }
 
 .inner-main-block__wrapper {
     height: 100%;
     display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 56px;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+    .inner-main-block {
+        padding: 38px 0 36px 0;
+        background-color: var(--grey-5);
+    }
+
+    .inner-main-block__wrapper {
+        grid-template-columns: auto 1fr;
+        column-gap: 56px;
+    }
 }
