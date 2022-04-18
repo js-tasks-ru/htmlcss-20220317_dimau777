@@ -12,6 +12,7 @@
     line-height: 19px;
     cursor: pointer;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    white-space: nowrap;
 }
 
 .button:disabled {

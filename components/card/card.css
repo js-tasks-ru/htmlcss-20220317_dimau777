@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
-    height: 231px; /* фикс высота, чтобы карточки были одинакового размера в каждой строке */
+    height: 450px; /* фикс высота, чтобы карточки были одинакового размера в каждой строке */
     background: var(--white);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
@@ -14,6 +14,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    position: relative; /* для абсолютного позиционирования модального окна внутри карточки */
+}
+
+.card__block-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .card__meta-info {
@@ -44,7 +53,7 @@
 @media screen and (min-width: 768px) {
 
     .card {
-        height: 367px;
+        height: 450px;
     }
 
     .card__preview-area {

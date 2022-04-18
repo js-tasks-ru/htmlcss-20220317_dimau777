@@ -45,3 +45,7 @@
     border-style: solid;
     border-color: var(--primary-button-color) transparent transparent transparent;
 }
+
+.tooltip_force-show .tooltip__helper {
+    display: inline-block;
+}

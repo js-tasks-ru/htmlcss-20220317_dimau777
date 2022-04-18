@@ -10,7 +10,7 @@
 .header__title {
     margin: 0px;
     padding-top: 48px;
-    padding-bottom: 69px;
+    padding-bottom: 16px;
     font-family: var(--second-font-family);
     font-style: normal;
     font-weight: 400;
@@ -34,7 +34,7 @@
 
     .header__title {
         padding-top: 40px;
-        padding-bottom: 53px;
+        padding-bottom: 16px;
         font-weight: 500;
         font-size: 50px;
         line-height: 64px;
