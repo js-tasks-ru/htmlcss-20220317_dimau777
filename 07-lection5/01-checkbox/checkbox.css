@@ -48,6 +48,7 @@
 .checkbox__input:checked ~ .checkbox__custom-element .checkbox__control {
     background-color: var(--primary-button-color);
     border-color: var(--primary-button-color);
+    animation: pulse 0.5s;
 }
 
 .checkbox__input:checked ~ .checkbox__custom-element .checkbox__icon {
@@ -75,4 +76,13 @@
 
 .checkbox__input:disabled ~ .checkbox__custom-element .checkbox__text {
     color: var(--grey-2);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #bdc3c7;
+    }
+    100% {
+        box-shadow: 0 0 0 24px rgba(189, 195, 199, 0);
+    }
 }
