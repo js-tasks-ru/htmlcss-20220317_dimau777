@@ -20,37 +20,61 @@
             <h1 class="header__title">Reusable component library</h1>
         </div>
     </header>
+
+    <nav class="tabs">
+        <div class="container">
+
+            <div class="tabs__scroller">
+                <input type="radio" class="tabs__input" name="tab" id="all-tab" checked>
+                <label class="tabs__tab" for="all-tab">All components</label>
+                <input type="radio" class="tabs__input" name="tab" id="elements-tab">
+                <label class="tabs__tab" for="elements-tab">Elements</label>
+                <input type="radio" class="tabs__input" name="tab" id="containers-tab">
+                <label class="tabs__tab" for="containers-tab">Containers</label>
+                <input type="radio" class="tabs__input" name="tab" id="templates-tab">
+                <label class="tabs__tab" for="templates-tab">Templates</label>
+            </div>
+
+            <div class="tabs__content tabs__content_complex">
+                <!-- Сложные компоненты -->
+            </div>
+            <div class="tabs__content tabs__content_simple">
+                <!-- Простые компоненты -->
+            </div>
+        </div>
+    </nav>
+
     <main class="preview">
         <div class="container preview__cards-list">
-            <div class="card">
+            <div class="card type-container">
                 <div class="card__preview-area"></div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Tooltip</h3>
                     <div class="card__component-type">Container</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card type-element">
                 <div class="card__preview-area"></div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Custom form elements</h3>
                     <div class="card__component-type">Element</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card type-container">
                 <div class="card__preview-area"></div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Calendar</h3>
                     <div class="card__component-type">Container</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card type-template">
                 <div class="card__preview-area"></div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Modal dialog</h3>
-                    <div class="card__component-type">Container</div>
+                    <div class="card__component-type">Template</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card type-template">
                 <div class="card__preview-area">
                     <div class="histogram">
                         <div class="histogram__meta">
@@ -90,10 +114,10 @@
                 </div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Histogram</h3>
-                    <div class="card__component-type">Element</div>
+                    <div class="card__component-type">Template</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card type-element">
                 <div class="card__preview-area"></div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Avatar</h3>
@@ -102,6 +126,7 @@
             </div>
         </div>
     </main>
+
     <footer class="footer">
         <div class="container">
             <header class="footer__title">About</header>
@@ -111,7 +136,9 @@
                 components, or browsing the PNG previews in the categories you're most curious about.</p>
         </div>
     </footer>
+
 </div>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
 
