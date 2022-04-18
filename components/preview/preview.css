@@ -1,17 +1,46 @@
 .preview {
     background-color: var(--grey-5);
     border-top: 1px solid var(--grey-2);
-    border-bottom: 1px solid var(--grey-2);
+    padding-top: 23px;
+    padding-bottom: 23px;
 }
 
 .preview__cards-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
-    padding-top: 23px;
-    padding-bottom: 23px;
 }
 
+/* Стили для отдельный секций */
+.preview__section {
+    display: none;
+}
+
+.preview__section-header {
+    margin-top: 64px;
+    margin-bottom: 32px;
+    font-family: var(--second-font-family);
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}
+
+.preview__section-block {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.preview__section-mini-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1; /* Чтобы колонки занимали всю ширину контейнера */
+}
+
+/* Стили под большие экраны */
 @media screen and (min-width: 600px) {
     .preview__cards-list {
         grid-template-columns: 1fr 1fr;
@@ -19,11 +48,28 @@
 }
 
 @media screen and (min-width: 768px) {
+    .preview {
+        padding-top: 68px;
+        padding-bottom: 68px;
+    }
+
    .preview__cards-list {
        grid-template-columns: 1fr 1fr 1fr;
-       gap: 30px;
-       padding-top: 68px;
-       padding-bottom: 68px;
+       gap: 32px;
+   }
+
+   .preview__section-block {
+       flex-direction: column;
+       gap: 32px;
+   }
+
+   .preview__section-mini-block {
+       flex-direction: row;
+       gap: 32px;
+   }
+
+   .preview__section-mini-block button {
+       flex-grow: 1;
    }
 }
 
