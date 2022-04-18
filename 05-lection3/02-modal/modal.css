@@ -9,6 +9,7 @@
 }
 
 .modal__window {
+    box-sizing: border-box;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -48,4 +49,14 @@
     width: 16px;
     height: 16px;
     color: var(--black);
+}
+
+/* Стили для отображения в карточке на главной странице */
+.modal_force-show {
+    display: block;
+    position: absolute;
+}
+
+.modal_force-show .modal__window {
+    width: 80%;
 }

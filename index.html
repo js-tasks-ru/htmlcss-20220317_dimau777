@@ -46,29 +46,170 @@
 
     <main class="preview">
         <div class="container preview__cards-list">
+
             <div class="card type-container">
-                <div class="card__preview-area"></div>
+                <div class="card__preview-area">
+                    <div class="tooltip tooltip_force-show">
+                        <svg class="tooltip__icon">
+                            <use href="../../assets/images/icons.svg#question-mark"></use>
+                        </svg>
+                        <div class="tooltip__helper">Helper Text</div>
+                    </div>
+                </div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Tooltip</h3>
                     <div class="card__component-type">Container</div>
                 </div>
             </div>
+
             <div class="card type-element">
-                <div class="card__preview-area"></div>
+                <div class="card__preview-area">
+
+                    <div class="card__block-elements">
+                        <label class="radio">
+                            <input type="radio" class="radio__input" name="name" value="value1">
+                            <div class="radio__custom-element">
+                                <div class="radio__control">
+                                    <div class="radio__icon"></div>
+                                </div>
+                                <div class="radio__text">Default</div>
+                            </div>
+                        </label>
+
+                        <label class="radio">
+                            <input type="radio" class="radio__input" checked name="name" value="value2">
+                            <div class="radio__custom-element">
+                                <div class="radio__control">
+                                    <div class="radio__icon"></div>
+                                </div>
+                                <div class="radio__text">Checked</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="card__block-elements">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input">
+                            <div class="checkbox__custom-element">
+                                <div class="checkbox__control">
+                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="checkbox__text">Default</div>
+                            </div>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" checked>
+                            <div class="checkbox__custom-element">
+                                <div class="checkbox__control">
+                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="checkbox__text">Checked</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Custom form elements</h3>
                     <div class="card__component-type">Element</div>
                 </div>
             </div>
+
             <div class="card type-container">
-                <div class="card__preview-area"></div>
+                <div class="card__preview-area">
+                    <div class="calendar">
+                        <div class="calendar__selected-month">
+                            October 2019
+                        </div>
+                        <div class="calendar__outer-wrapper">
+                            <div class="calendar__inner-wrapper">
+                                <div class="calendar__date-item calendar__date-item_weekday">Mon</div>
+                                <div class="calendar__date-item calendar__date-item_weekday">Tue</div>
+                                <div class="calendar__date-item calendar__date-item_weekday">Wed</div>
+                                <div class="calendar__date-item calendar__date-item_weekday">Thu</div>
+                                <div class="calendar__date-item calendar__date-item_weekday">Fri</div>
+                                <div class="calendar__date-item calendar__date-item_weekday">Sat</div>
+                                <div class="calendar__date-item calendar__date-item_weekday">Sun</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">1</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">2</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">3</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">4</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">5</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">6</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">7</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">8</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">9</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">10</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">11</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">12</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">13</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">14</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">15</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">16</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">17</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_selected">
+                                    18
+                                </div>
+                                <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range">
+                                    19
+                                </div>
+                                <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range">
+                                    20
+                                </div>
+                                <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range">
+                                    21
+                                </div>
+                                <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range">
+                                    22
+                                </div>
+                                <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_selected">
+                                    23
+                                </div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">24</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">25</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">26</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">27</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">28</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">29</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">30</div>
+                                <div class="calendar__date-item calendar__date-item_ordinary">31</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Calendar</h3>
                     <div class="card__component-type">Container</div>
                 </div>
             </div>
+
             <div class="card type-template">
-                <div class="card__preview-area"></div>
+                <div class="card__preview-area">
+                    <div class="modal modal_force-show" id="modal">
+                        <div class="modal__window">
+                            <svg class="modal__close" id="modal-close" viewBox="0 0 24 24"
+                                 preserveAspectRatio="xMidYMid meet">
+                                <use href="../../assets/images/icons.svg#cancel"></use>
+                            </svg>
+                            <p class="modal__title">Modal title</p>
+                            <p class="modal__content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                amet sint. Velit</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Modal dialog</h3>
                     <div class="card__component-type">Template</div>
@@ -118,7 +259,11 @@
                 </div>
             </div>
             <div class="card type-element">
-                <div class="card__preview-area"></div>
+                <div class="card__preview-area">
+                    <div class="avatar">
+                        <img class="avatar__img" src="06-lection4/01-avatar/public/avatar-200.jpg" alt="Картинка с аватаром пользователя">
+                    </div>
+                </div>
                 <div class="card__meta-info">
                     <h3 class="card__title">Avatar</h3>
                     <div class="card__component-type">Element</div>
