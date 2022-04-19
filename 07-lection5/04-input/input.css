@@ -42,16 +42,7 @@
     color: var(--grey-2);
 }
 
-.text-input__success-icon {
-    width: 24px;
-    height: 24px;
-    display: none;
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-}
-
-.text-input__error-icon {
+.text-input__success-icon, .text-input__error-icon {
     width: 24px;
     height: 24px;
     display: none;
@@ -61,7 +52,7 @@
 }
 
 /* Стили для успешного ввода */
-.text-input_success .text-input__success-icon{
+.text-input_success .text-input__success-icon {
     display: block;
 }
 
