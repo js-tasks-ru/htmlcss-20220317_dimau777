@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    transition: background-color 500ms, border-color 500ms, justify-content 500ms;
+    transition: background-color 500ms, border-color 500ms;
 }
 
 .toggler__icon {
@@ -39,7 +39,9 @@
     background: var(--grey-2);
     margin: 1px;
     border-radius: 16px;
-    transition: background 500ms;
+    /* Анимация переключения тоглера */
+    transform: translateX(0px);
+    transition: background 500ms, transform 500ms;
 }
 
 .toggler__text {
@@ -55,11 +57,11 @@
 .toggler__input:checked ~ .toggler__custom-element .toggler__control {
     background-color: var(--primary-button-color);
     border-color: var(--primary-button-color);
-    justify-content: right;
 }
 
 .toggler__input:checked ~ .toggler__custom-element .toggler__icon {
     background-color: var(--white);
+    transform: translateX(24px); /* Для анимированного плавного движения бегунка внутри тоглера */
 }
 
 /* Состояние focused для переключателя */
