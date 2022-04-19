@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modal Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="page page_inner">
+    <header class="header header_inner">
+        <div class="container">
+            <div class="header__logo">
+                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="1" width="30" height="30" fill="#212429"/>
+                    <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                    <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="inner-main-block">
+        <div class="container">
+            <div class="inner-main-block__wrapper">
+                <nav class="menu">
+                    <h2 class="menu__name">Components</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item_selected"><a class="menu__item-a" href="/pages/modal.html">Modal</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/tooltip.html">Tooltip</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/avatar.html">Avatar</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/calendar.html">Calendar</a></li>
+                        <li class="menu__item">Histogram</li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/form-elements.html">Custom form elements</a></li>
+                        <li class="menu__item menu__item_main"><a class="menu__item-a" href="/index.html">Main page</a></li>
+                    </ul>
+                </nav>
+                <div class="preview-area">
+                    <h2 class="preview-area__title">Modal</h2>
+                    <div class="preview-area__content">
+                        <button class="button button_primary" id="modal-open">Open modal</button>
+                        <div class="modal" id="modal">
+                            <div class="modal__window">
+                                <svg class="modal__close" id="modal-close" viewBox="0 0 24 24"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <use href="../../assets/images/icons.svg#cancel"></use>
+                                </svg>
+                                <p class="modal__title">Modal title</p>
+                                <p class="modal__content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                    amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim
+                                    velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs preview-area__tabs">
+
+                        <div class="tabs__scroller">
+                            <input type="radio" class="tabs__input" name="tab" id="html" checked>
+                            <label class="tabs__tab" for="html">HTML</label>
+                            <input type="radio" class="tabs__input" name="tab" id="css">
+                            <label class="tabs__tab" for="css">CSS</label>
+                        </div>
+
+                        <div class="tabs__divider"></div>
+
+                        <div class="tabs__content" id="tabs__content_html">
+                               <pre><code>&lt;button class=&quot;button button_primary&quot; id=&quot;modal-open&quot;&gt;Open modal&lt;/button&gt;
+&lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal__window&quot;&gt;
+    &lt;svg class=&quot;modal__close&quot; id=&quot;modal-close&quot; viewBox=&quot;0 0 24 24&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;&gt;
+        &lt;use href=&quot;../../assets/images/icons.svg#cancel&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;p class=&quot;modal__title&quot;&gt;Modal title&lt;/p&gt;
+    &lt;p class=&quot;modal__content&quot;&gt;
+        Content of modal window
+    &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                        </div>
+
+                        <div class="tabs__content" id="tabs__content_css">
+                            <pre><code>.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--grey-6-with-opacity);
+    z-index: 100;
+}
+
+.modal__window {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 30px 40px;
+}
+
+.modal__title {
+    margin: 0;
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark-blue);
+}
+
+.modal__content {
+    margin: 14px 0 0 0;
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+.modal__close {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    color: var(--black);
+}
+
+/* Стили для отображения в карточке на главной странице */
+.modal_force-show {
+    display: block;
+    position: absolute;
+}
+
+.modal_force-show .modal__window {
+    width: 80%;
+}</code></pre>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <header class="footer__title">About</header>
+            <p class="footer__description">This project is a collection of professionally designed, pre-built,
+                fully responsive HTML snippets you can drop into your projects. Get started by checking out our free
+                preview
+                components, or browsing the PNG previews in the categories you're most curious about.</p>
+        </div>
+    </footer>
+</div>
+<script src="/05-lection3/02-modal/index.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

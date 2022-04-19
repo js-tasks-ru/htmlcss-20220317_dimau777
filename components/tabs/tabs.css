@@ -1,5 +1,5 @@
 .tabs {
-
+    position: relative;
 }
 
 .tabs__input {
@@ -13,6 +13,16 @@
     flex-wrap: nowrap;
 }
 
+.tabs__divider {
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, 0);
+    height: 1px;
+    background-color: var(--grey-2);
+}
+
 .tabs__tab {
     padding-bottom: 8px;
     border-bottom: 5px solid var(--white);
@@ -23,6 +33,16 @@
     line-height: 24px;
     color: var(--grey-3);
     white-space: nowrap;
+}
+
+.tabs__content {
+    display: none;
+    padding: 24px 0;
+    overflow-x: auto;
+}
+
+.tabs__content#tabs__content_html {
+    display: block;
 }
 
 /* Active tab styles */

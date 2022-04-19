@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avatar Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="page page_inner">
+    <header class="header header_inner">
+        <div class="container">
+            <div class="header__logo">
+                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="1" width="30" height="30" fill="#212429"/>
+                    <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                    <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="inner-main-block">
+        <div class="container">
+            <div class="inner-main-block__wrapper">
+                <nav class="menu">
+                    <h2 class="menu__name">Components</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/modal.html">Modal</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/tooltip.html">Tooltip</a></li>
+                        <li class="menu__item menu__item_selected">Avatar</li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/calendar.html">Calendar</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/histogram.html">Histogram</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/form-elements.html">Custom form elements</a></li>
+                        <li class="menu__item menu__item_main"><a class="menu__item-a" href="/index.html">Main page</a></li>
+                    </ul>
+                </nav>
+                <div class="preview-area">
+                    <h2 class="preview-area__title">Avatar</h2>
+                    <div class="preview-area__content">
+
+                        <div style="height: 150px; display: flex; align-items: center; justify-content: center;">
+                            <div class="avatar">
+                                <img class="avatar__img" src="/06-lection4/01-avatar/public/avatar-200.jpg" alt="Картинка с аватаром пользователя">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tabs preview-area__tabs">
+
+                        <div class="tabs__scroller">
+                            <input type="radio" class="tabs__input" name="tab" id="html" checked>
+                            <label class="tabs__tab" for="html">HTML</label>
+                            <input type="radio" class="tabs__input" name="tab" id="css">
+                            <label class="tabs__tab" for="css">CSS</label>
+                        </div>
+
+                        <div class="tabs__divider"></div>
+
+                        <div class="tabs__content" id="tabs__content_html">
+                               <pre><code>&lt;div class=&quot;avatar&quot;&gt;
+	&lt;img class=&quot;avatar__img&quot; src=&quot;/06-lection4/01-avatar/public/avatar-200.jpg&quot; alt=&quot;Картинка с аватаром пользователя&quot;&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+
+                        <div class="tabs__content" id="tabs__content_css">
+                           <pre><code>.avatar {
+    width: 102px;
+    height: 102px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}</code></pre>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <header class="footer__title">About</header>
+            <p class="footer__description">This project is a collection of professionally designed, pre-built,
+                fully responsive HTML snippets you can drop into your projects. Get started by checking out our free
+                preview
+                components, or browsing the PNG previews in the categories you're most curious about.</p>
+        </div>
+    </footer>
+</div>
+<script src="/05-lection3/02-modal/index.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
