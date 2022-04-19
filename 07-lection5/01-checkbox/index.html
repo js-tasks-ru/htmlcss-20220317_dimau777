@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
     </head>
-    <body>
+    <body class="preload">
     <div style="display: flex; gap: 16px; flex-direction: column; padding: 30px;">
 
         <label class="checkbox">
@@ -45,5 +45,11 @@
         </label>
 
     </div>
+    <script>
+        // Снимает блокировку на анимации после загрузки страницы
+        window.addEventListener("load", function() {
+            document.body.classList.remove("preload");
+        });
+    </script>
     </body>
 </html>

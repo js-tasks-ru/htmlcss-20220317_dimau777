@@ -62,6 +62,16 @@ html, body {
     height: 100%;
 }
 
+/* Класс используется только для body - блокирует отработку анимаций до момента, пока не будет снят с помощью JS
+ Это позволяет избавиться от автоматического срабатывания анимаций при загрузке страницы */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
 .container {
     box-sizing: border-box;
     width: 100%;
