@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 5px;
     align-items: flex-start;
-    position: relative;
 }
 
 .text-input__label {
@@ -15,6 +14,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--grey-3);
+}
+
+.text-input__control-wrapper {
+    position: relative;
 }
 
 .text-input__control {
