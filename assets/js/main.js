@@ -1,3 +1,4 @@
+/* Отвечает за работу вкладок на главной странице */
 document.addEventListener("DOMContentLoaded", () => {
     let allTab = document.getElementById("all-tab");
     let elementsTab = document.getElementById("elements-tab");
@@ -49,6 +50,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+/* Отвечает за работу вкладок HTML / CSS на внутренних страницах */
+document.addEventListener("DOMContentLoaded", () => {
+    let htmlTab = document.getElementById("html");
+    let cssTab = document.getElementById("css");
 
+    let htmlContent = document.getElementById("tabs__content_html");
+    let cssContent = document.getElementById("tabs__content_css");
 
+    htmlTab.onclick = function () {
+        htmlContent.style.display = "block";
+        cssContent.style.display = "none";
+    }
+
+    cssTab.onclick = function () {
+        htmlContent.style.display = "none";
+        cssContent.style.display = "block";
+    }
+});
 

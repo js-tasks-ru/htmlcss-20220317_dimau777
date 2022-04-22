@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tooltip Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="page page_inner">
+    <header class="header header_inner">
+        <div class="container">
+            <a href="/index.html" class="header__logo">
+                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="1" width="30" height="30" fill="#212429"/>
+                    <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                    <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="inner-main-block">
+        <div class="container">
+            <div class="inner-main-block__wrapper">
+                <nav class="menu">
+                    <h2 class="menu__name">Components</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/modal.html">Modal</a></li>
+                        <li class="menu__item menu__item_selected">Tooltip</li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/avatar.html">Avatar</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/calendar.html">Calendar</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/histogram.html">Histogram</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/form-elements.html">Custom form elements</a></li>
+                        <li class="menu__item menu__item_main"><a class="menu__item-a" href="/index.html">Main page</a></li>
+                    </ul>
+                </nav>
+                <div class="preview-area">
+                    <h2 class="preview-area__title">Tooltip</h2>
+                    <div class="preview-area__content">
+
+                        <div style="height: 150px; display: flex; align-items: center; justify-content: center;">
+                            <div class="tooltip">
+                                <svg class="tooltip__icon">
+                                    <use href="../../assets/images/icons.svg#question-mark"></use>
+                                </svg>
+                                <div class="tooltip__helper">Helper Text</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tabs preview-area__tabs">
+
+                        <div class="tabs__scroller">
+                            <input type="radio" class="tabs__input" name="tab" id="html" checked>
+                            <label class="tabs__tab" for="html">HTML</label>
+                            <input type="radio" class="tabs__input" name="tab" id="css">
+                            <label class="tabs__tab" for="css">CSS</label>
+                        </div>
+
+                        <div class="tabs__divider"></div>
+
+                        <div class="tabs__content" id="tabs__content_html">
+                               <pre><code>&lt;div class=&quot;tooltip&quot;&gt;
+	&lt;svg class=&quot;tooltip__icon&quot;&gt;
+		&lt;use href=&quot;../../assets/images/icons.svg#question-mark&quot;&gt;&lt;/use&gt;
+	&lt;/svg&gt;
+	&lt;div class=&quot;tooltip__helper&quot;&gt;Helper Text&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+
+                        <div class="tabs__content" id="tabs__content_css">
+                            <pre><code>.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip__icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: var(--black);
+}
+
+.tooltip__helper {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 7px + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background: var(--primary-button-color);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    padding: 13px 21px;
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--grey-2);
+}
+
+.tooltip:hover .tooltip__helper {
+    display: inline-block;
+}
+
+.tooltip__helper::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: &quot;&quot;;
+    border-width: 7px;
+    border-style: solid;
+    border-color: var(--primary-button-color) transparent transparent transparent;
+}
+
+.tooltip_force-show .tooltip__helper {
+    display: inline-block;
+}</code></pre>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <header class="footer__title">About</header>
+            <p class="footer__description">This project is a collection of professionally designed, pre-built,
+                fully responsive HTML snippets you can drop into your projects. Get started by checking out our free
+                preview
+                components, or browsing the PNG previews in the categories you're most curious about.</p>
+        </div>
+    </footer>
+</div>
+<script src="/05-lection3/02-modal/index.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -29,6 +29,11 @@
 
 }
 
+.menu__item-a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 .menu__item_selected {
     color: var(--red-2);
 }

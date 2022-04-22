@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendar Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="page page_inner">
+    <header class="header header_inner">
+        <div class="container">
+            <a href="/index.html" class="header__logo">
+                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="1" width="30" height="30" fill="#212429"/>
+                    <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                    <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="inner-main-block">
+        <div class="container">
+            <div class="inner-main-block__wrapper">
+                <nav class="menu">
+                    <h2 class="menu__name">Components</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/modal.html">Modal</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/tooltip.html">Tooltip</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/avatar.html">Avatar</a></li>
+                        <li class="menu__item menu__item_selected">Calendar</li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/histogram.html">Histogram</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/form-elements.html">Custom form elements</a></li>
+                        <li class="menu__item menu__item_main"><a class="menu__item-a" href="/index.html">Main page</a></li>
+                    </ul>
+                </nav>
+                <div class="preview-area">
+                    <h2 class="preview-area__title">Calendar</h2>
+                    <div class="preview-area__content">
+
+                        <div class="calendar">
+                            <div class="calendar__selected-month">
+                                October 2019
+                            </div>
+                            <div class="calendar__outer-wrapper">
+                                <div class="calendar__inner-wrapper">
+                                    <div class="calendar__date-item calendar__date-item_weekday">Mon</div>
+                                    <div class="calendar__date-item calendar__date-item_weekday">Tue</div>
+                                    <div class="calendar__date-item calendar__date-item_weekday">Wed</div>
+                                    <div class="calendar__date-item calendar__date-item_weekday">Thu</div>
+                                    <div class="calendar__date-item calendar__date-item_weekday">Fri</div>
+                                    <div class="calendar__date-item calendar__date-item_weekday">Sat</div>
+                                    <div class="calendar__date-item calendar__date-item_weekday">Sun</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary"></div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">1</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">2</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">3</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">4</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">5</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">6</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">7</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">8</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">9</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">10</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">11</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">12</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">13</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">14</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">15</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">16</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">17</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_selected">18</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range">19</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range">20</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range">21</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range">22</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary calendar__date-item_selected">23</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">24</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">25</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">26</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">27</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">28</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">29</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">30</div>
+                                    <div class="calendar__date-item calendar__date-item_ordinary">31</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tabs preview-area__tabs">
+
+                        <div class="tabs__scroller">
+                            <input type="radio" class="tabs__input" name="tab" id="html" checked>
+                            <label class="tabs__tab" for="html">HTML</label>
+                            <input type="radio" class="tabs__input" name="tab" id="css">
+                            <label class="tabs__tab" for="css">CSS</label>
+                        </div>
+
+                        <div class="tabs__divider"></div>
+
+                        <div class="tabs__content" id="tabs__content_html">
+                               <pre>
+                                   <code>
+&lt;div class=&quot;calendar&quot;&gt;
+    &lt;div class=&quot;calendar__selected-month&quot;&gt;
+        October 2019
+    &lt;/div&gt;
+    &lt;div class=&quot;calendar__outer-wrapper&quot;&gt;
+        &lt;div class=&quot;calendar__inner-wrapper&quot;&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_weekday&quot;&gt;Mon&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_weekday&quot;&gt;Tue&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_weekday&quot;&gt;Wed&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_weekday&quot;&gt;Thu&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_weekday&quot;&gt;Fri&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_weekday&quot;&gt;Sat&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_weekday&quot;&gt;Sun&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;1&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;2&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;3&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;4&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;5&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;6&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;7&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;8&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;9&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;10&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;11&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;12&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;13&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;14&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;15&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;16&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;17&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary calendar__date-item_selected&quot;&gt;18&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range&quot;&gt;19&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range&quot;&gt;20&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range&quot;&gt;21&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary calendar__date-item_in-range&quot;&gt;22&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary calendar__date-item_selected&quot;&gt;23&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;24&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;25&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;26&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;27&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;28&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;29&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;30&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_ordinary&quot;&gt;31&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                               </code>
+                               </pre>
+                        </div>
+
+                        <div class="tabs__content" id="tabs__content_css">
+                          <pre>
+                              <code>
+.calendar {
+    width: 250px;
+    padding: 28px 30px 40px 30px;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.calendar__selected-month {
+    margin-bottom: 24px;
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.calendar__outer-wrapper {
+    position: relative;
+    height: 0px;
+    padding-bottom: 100%;
+}
+
+.calendar__inner-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.calendar__date-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar__date-item_weekday {
+    margin-bottom: 8px;
+    font-family: var(--second-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--light-blue);
+}
+
+.calendar__date-item_ordinary {
+    font-family: var(--source-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.calendar__date-item_selected {
+    background: var(--primary-button-color);
+    color: var(--white);
+}
+
+.calendar__date-item_in-range {
+    background-color: var(--extra-light-blue);
+}
+                          </code>
+                          </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <header class="footer__title">About</header>
+            <p class="footer__description">This project is a collection of professionally designed, pre-built,
+                fully responsive HTML snippets you can drop into your projects. Get started by checking out our free
+                preview
+                components, or browsing the PNG previews in the categories you're most curious about.</p>
+        </div>
+    </footer>
+</div>
+<script src="/05-lection3/02-modal/index.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

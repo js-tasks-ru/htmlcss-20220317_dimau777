@@ -6,6 +6,7 @@
     bottom: 0;
     left: 0;
     background-color: var(--grey-6-with-opacity);
+    z-index: 100;
 }
 
 .modal__window {

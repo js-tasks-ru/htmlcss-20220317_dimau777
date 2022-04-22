@@ -1,6 +1,7 @@
 .preview-area {
     background: var(--white);
     padding: 32px 0;
+    overflow-x: hidden;
 }
 
 .preview-area__title {
@@ -16,6 +17,12 @@
 .preview-area__content {
     width: 300px;
     margin-top: 24px;
+    display: flex;
+    gap: 32px;
+}
+
+.preview-area__tabs {
+    margin-top: 32px;
 }
 
 @media screen and (min-width: 768px) {

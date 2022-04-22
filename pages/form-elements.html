@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Elements Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="page page_inner">
+    <header class="header header_inner">
+        <div class="container">
+            <a href="/index.html" class="header__logo">
+                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="1" width="30" height="30" fill="#212429"/>
+                    <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                    <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="inner-main-block">
+        <div class="container">
+            <div class="inner-main-block__wrapper">
+                <nav class="menu">
+                    <h2 class="menu__name">Components</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/modal.html">Modal</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/tooltip.html">Tooltip</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/avatar.html">Avatar</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/calendar.html">Calendar</a></li>
+                        <li class="menu__item"><a class="menu__item-a" href="/pages/histogram.html">Histogram</a></li>
+                        <li class="menu__item menu__item_selected">Custom form elements</li>
+                        <li class="menu__item menu__item_main"><a class="menu__item-a" href="/index.html">Main page</a></li>
+                    </ul>
+                </nav>
+                <div class="preview-area">
+                    <h2 class="preview-area__title">Custom form elements</h2>
+                    <div class="preview-area__content">
+
+                        <div style="display: flex; flex-direction: column; gap: 24px; flex-grow: 1;">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <div class="checkbox__custom-element">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox__text">Default</div>
+                                </div>
+                            </label>
+
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input" checked>
+                                <div class="checkbox__custom-element">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox__text">Checked</div>
+                                </div>
+                            </label>
+
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input" disabled>
+                                <div class="checkbox__custom-element">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox__text">Disabled</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 24px; flex-grow: 1;">
+                            <label class="radio">
+                                <input type="radio" class="radio__input" name="name" value="value1">
+                                <div class="radio__custom-element">
+                                    <div class="radio__control">
+                                        <div class="radio__icon"></div>
+                                    </div>
+                                    <div class="radio__text">Default</div>
+                                </div>
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" class="radio__input" checked name="name" value="value2">
+                                <div class="radio__custom-element">
+                                    <div class="radio__control">
+                                        <div class="radio__icon"></div>
+                                    </div>
+                                    <div class="radio__text">Checked</div>
+                                </div>
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" class="radio__input" disabled name="name" value="value3">
+                                <div class="radio__custom-element">
+                                    <div class="radio__control">
+                                        <div class="radio__icon"></div>
+                                    </div>
+                                    <div class="radio__text">Disabled</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 24px; flex-grow: 1;">
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input">
+                                <div class="toggler__custom-element">
+                                    <div class="toggler__control">
+                                        <div class="toggler__icon"></div>
+                                    </div>
+                                    <div class="toggler__text">Off</div>
+                                </div>
+                            </label>
+
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input" checked>
+                                <div class="toggler__custom-element">
+                                    <div class="toggler__control">
+                                        <div class="toggler__icon"></div>
+                                    </div>
+                                    <div class="toggler__text">On</div>
+                                </div>
+                            </label>
+
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input" disabled>
+                                <div class="toggler__custom-element">
+                                    <div class="toggler__control">
+                                        <div class="toggler__icon"></div>
+                                    </div>
+                                    <div class="toggler__text">Disabled</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 24px; flex-grow: 1;">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <header class="footer__title">About</header>
+            <p class="footer__description">This project is a collection of professionally designed, pre-built,
+                fully responsive HTML snippets you can drop into your projects. Get started by checking out our free
+                preview
+                components, or browsing the PNG previews in the categories you're most curious about.</p>
+        </div>
+    </footer>
+</div>
+<script src="/05-lection3/02-modal/index.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
