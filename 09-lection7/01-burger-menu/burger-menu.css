@@ -1,0 +1,42 @@
+.burger-menu {
+
+}
+
+.burger-menu__open {
+    display: inline-flex; /* Чтобы компонент остался строчным снаружи */
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.burger-menu__close {
+    display: inline-flex; /* Чтобы компонент остался строчным снаружи */
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.burger-menu__curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100vw);
+    transition: transform 200ms linear;
+    background-color: var(--grey-5);
+}
+
+.burger-menu__curtain[data-open] {
+    transform: translateX(0);
+}
+
+.burger-menu__window {
+    padding: 24px 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+}

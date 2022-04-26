@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <script defer src="./burger-menu.js"></script>
+</head>
+<body>
+<div class="page page_inner">
 
-    </body>
+    <header class="header header_for-inner-page">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="burger-menu">
+
+                    <svg class="burger-menu__open header__burger-menu-open" id="burger-menu-open">
+                        <use href="/assets/images/icons.svg#burger"></use>
+                    </svg>
+
+                    <div class="burger-menu__curtain" id="burger-menu">
+
+                        <div class="header header_for-inner-page">
+                            <div class="container">
+                                <div class="header__inner">
+                                    <svg class="burger-menu__close header__burger-menu-open" id="burger-menu-close">
+                                        <use href="/assets/images/icons.svg#close-burger-menu"></use>
+                                    </svg>
+
+                                    <a href="/index.html" class="header__logo">
+                                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="1" width="30" height="30" fill="#212429"/>
+                                            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                                            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="burger-menu__window">
+                            <nav class="menu">
+                                <h2 class="menu__name">Components</h2>
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a class="menu__item-a" href="/pages/modal.html">Modal</a>
+                                    </li>
+                                    <li class="menu__item"><a class="menu__item-a"
+                                                              href="/pages/tooltip.html">Tooltip</a></li>
+                                    <li class="menu__item menu__item_selected">Avatar</li>
+                                    <li class="menu__item"><a class="menu__item-a"
+                                                              href="/pages/calendar.html">Calendar</a></li>
+                                    <li class="menu__item"><a class="menu__item-a" href="/pages/histogram.html">Histogram</a>
+                                    </li>
+                                    <li class="menu__item"><a class="menu__item-a" href="/pages/form-elements.html">Custom
+                                        form
+                                        elements</a></li>
+                                    <li class="menu__item menu__item_main"><a class="menu__item-a" href="/index.html">Main
+                                        page</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="/index.html" class="header__logo">
+                    <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="1" width="30" height="30" fill="#212429"/>
+                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+</div>
+
+</body>
 </html>

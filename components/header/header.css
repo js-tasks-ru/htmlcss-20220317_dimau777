@@ -3,8 +3,8 @@
     padding: 16px 0;
 }
 
-.header__logo {
-    text-align: center;
+.header__inner {
+    position: relative;
 }
 
 .header__title {
@@ -19,8 +19,16 @@
     color: var(--grey-4);
 }
 
-.header_inner {
+.header__burger-menu-open {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header_for-inner-page {
     background: var(--grey-5);
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,5 +47,13 @@
         font-size: 50px;
         line-height: 64px;
         color: var(--black);
+    }
+
+    .header_for-inner-page {
+        text-align: left;
+    }
+
+    .header__burger-menu-open {
+        display: none;
     }
 }
